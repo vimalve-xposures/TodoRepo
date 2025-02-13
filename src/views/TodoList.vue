@@ -27,13 +27,7 @@
   export default {
     setup() {
       const newTask = ref("");
-      const tasks = ref([
-        // { text: "Learn JavaScript projects", completed: false },
-        // { text: "Make a to-do list app", completed: false },
-        // { text: "Host it on an online server", completed: true },
-        // { text: "Link it to your resume", completed: false },
-        // { text: "Get a software job", completed: false }
-      ]);
+      const tasks = ref([]);
   
       const addTask = () => {
         if (newTask.value.trim() !== "") {
@@ -51,7 +45,7 @@
   };
   </script>
   
-  <style lang="scss">
+  <style scoped>
   .todo-container {
     max-width: 400px;
     max-height: 500px;
